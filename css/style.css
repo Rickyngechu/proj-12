@@ -34,4 +34,40 @@
 }
 
 @layer components {
+  /* button styling */
+  .btn {
+    @apply py-3 px-9  text-2xl rounded-full font-bold;
+  }
+
+  /* Header section */
+  .header {
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-size: contain;
+    background-position: right -40px top -40px;
+    background-repeat: no-repeat;
+  }
+  /* Header content */
+  .header-content {
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-size: 200px 200px;
+
+    background-position: right -7rem bottom 1rem;
+    background-repeat: no-repeat;
+  }
+
+  /* Styling the why us section */
+  .why-sub-heading {
+    @apply flex items-center bg-Very-Pale-Red rounded-tl-full rounded-bl-full mb-8;
+  }
+  /* Heading span items */
+  .span-why {
+    @apply py-3 px-10 bg-Bright-Red font-bold text-3xl rounded-full text-Vary-Light-Gray mr-5;
+  }
+  .span-txt {
+    @apply text-Dark-Blue font-bold text-2xl;
+  }
+
+  .p-txt {
+    @apply text-2xl text-Dark-Grayish-Blue;
+  }
 }
