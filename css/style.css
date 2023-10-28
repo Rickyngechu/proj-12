@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 16px basically it will be 1rem*/
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@layer components {
+}
