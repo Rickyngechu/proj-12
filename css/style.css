@@ -70,4 +70,12 @@
   .p-txt {
     @apply text-2xl text-Dark-Grayish-Blue;
   }
+
+  /* Footer link */
+  .footer-link {
+    @apply font-normal text-Vary-Light-Gray text-2xl;
+  }
+  .footer-link:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }

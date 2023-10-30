@@ -645,6 +645,20 @@ img {
   color: hsl(227 12% 61% / var(--tw-text-opacity));
 }
 
+/* Footer link */
+
+.footer-link{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 98% / var(--tw-text-opacity));
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -666,8 +680,28 @@ img {
   margin-bottom: 2rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .flex{
   display: flex;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .w-\[90\%\]{
@@ -686,6 +720,10 @@ img {
   justify-content: space-between;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .bg-Bright-Red{
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
@@ -696,6 +734,16 @@ img {
   background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
 }
 
+.bg-Very-Dark-Blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -704,6 +752,11 @@ img {
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-28{
