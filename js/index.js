@@ -7,7 +7,7 @@ let curSlide = 0;
 let maxSlide = slides.length;
 // sliderCont.style.overflow = "visible";
 // sliderCont.style.maxWidth = "100rem";
-console.log(slides);
+// console.log(slides);
 
 const createDots = function () {
   slides.forEach(function (_, i) {
@@ -60,11 +60,11 @@ const prevSlide = function () {
 let touchStartX = null;
 let touchEndX = null;
 
-document.addEventListener("touchstart", e => {
+sliderCont.addEventListener("touchstart", e => {
   touchStartX = e.touches[0].clientX;
 });
 
-document.addEventListener("touchend", e => {
+sliderCont.addEventListener("touchend", e => {
   touchEndX = e.changedTouches[0].clientX;
   handleSwipe();
 });
@@ -87,11 +87,11 @@ function handleSwipe() {
 let touchStartX2 = null;
 let touchEndX2 = null;
 
-document.addEventListener("touchstart", e => {
+sliderCont.addEventListener("touchstart", e => {
   touchStartX2 = e.touches[0].clientX;
 });
 
-document.addEventListener("touchend", e => {
+sliderCont.addEventListener("touchend", e => {
   touchEndX2 = e.changedTouches[0].clientX;
   handleSwipe2();
 });
@@ -110,3 +110,21 @@ function handleSwipe2() {
     touchEndX2 = null;
   }
 }
+
+const mobileNav = document.querySelector(".nav-mb ");
+const mobileNavCont = document.querySelector(".mobile-nav ");
+
+let hamBtn = document.querySelector(".hamburger-btn");
+hamBtn.addEventListener("click", function () {
+  if (
+    mobileNavCont.classList.contains("hide") &&
+    mobileNav.classList.contains("hide")
+  ) {
+    hamBtn.src = "../images/icon-close.svg";
+  } else {
+    hamBtn.src = "../images/icon-hamburger.svg";
+  }
+  mobileNavCont.classList.toggle("hide");
+
+  mobileNav.classList.toggle("hide");
+});
