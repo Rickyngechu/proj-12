@@ -97,25 +97,31 @@
     </header>
 
     <main>
-      <section class="why-us bg-Vary-Light-Gray">
+      <section class="why-us bg-Vary-Light-Gray laptop:bg-[#fff] laptop:py-10">
         <div class="cont max-w-[125rem] w-[90%] mx-auto laptop:w-[95%]">
           <div
             class="why-us-cont laptop:flex laptop:justify-between laptop:gap-24"
           >
-            <div class="intro text-center mb-20 laptop:w-1/2 laptop:text-left">
-              <h2 class="sub-heading font-bold text-Dark-Blue text-4xl mb-8">
+            <div
+              class="intro text-center mb-20 laptop:w-[50%] laptop:text-left"
+            >
+              <h2
+                class="sub-heading font-bold text-Dark-Blue text-4xl mb-8 laptop:text-6xl"
+              >
                 What's diffrent about Manage?
               </h2>
-              <p class="intro-text text-Dark-Grayish-Blue text-2xl">
+              <p
+                class="intro-text text-Dark-Grayish-Blue text-2xl laptop:text-3xl laptop:w-[90%]"
+              >
                 Manage provides all the functionality your team needs,without
                 the complexity.Our software is tailor-made for modern digital
                 product teams
               </p>
             </div>
 
-            <div class="why-items laptop:w-1/2">
+            <div class="why-items laptop:w-[50%]">
               <div class="item item-1 mb-20">
-                <h3 class="why-sub-heading laptop:bg-transparent">
+                <h3 class="why-sub-heading">
                   <span class="span-why">01</span>
                   <span class="span-txt">Track company-wide progress</span>
                 </h3>
@@ -158,10 +164,10 @@
         </div>
       </section>
 
-      <section class="reviews py-12">
-        <div class="cont max-w-[120rem] w-[90%] mx-auto">
+      <section class="reviews py-12 laptop:pb-36">
+        <div class="cont max-w-[120rem] w-[90%] mx-auto laptop:w-[95%]">
           <span
-            class="text-Dark-Blue font-bold text-5xl mb-36 block text-center"
+            class="text-Dark-Blue font-bold text-5xl mb-36 block text-center laptop:text-6xl"
             >What they've said</span
           >
           <div class="reviews-cont">
@@ -227,32 +233,30 @@
               </blockquote>
             </div>
           </div>
-          <div class="dots">
-            <!-- <button class="dots__dot"></button>
-            <button class="dots__dot"></button>
-            <button class="dots__dot dots__dot--active"></button> -->
-          </div>
+          <div class="dots laptop:hidden"></div>
 
           <a
             href="#"
-            class="btn getstarted bg-Bright-Red text-Vary-Light-Gray block mt-14 text-center mx-auto w-[50%]"
+            class="btn getstarted bg-Bright-Red text-Vary-Light-Gray block mt-14 text-center mx-auto w-[50%] laptop:w-[20%] laptop:mt-12"
             >Get Started</a
           >
         </div>
       </section>
 
-      <section class="callto-action py-40 bg-Bright-Red">
-        <div class="cont max-w-[120rem] w-[90%] mx-auto">
-          <div class="callto-cont text-center">
+      <section class="callto-action py-40 bg-Bright-Red laptop:py-28">
+        <div class="cont max-w-[125rem] w-[90%] mx-auto laptop:w-[95%]">
+          <div
+            class="callto-cont text-center laptop:px-12 laptop:flex laptop:justify-between laptop:gap-80"
+          >
             <h4
-              class="call-heading font-bold text-6xl mb-10 text-Vary-Light-Gray"
+              class="call-heading font-bold text-6xl mb-10 text-Vary-Light-Gray laptop:text-8xl"
             >
               Simplify how your team works today.
             </h4>
 
             <a
               href="#"
-              class="btn getstarted bg-Vary-Light-Gray text-Bright-Red"
+              class="btn getstarted bg-Vary-Light-Gray text-Bright-Red laptop:self-center laptop:w-[40%]"
               >Get Started</a
             >
           </div>
@@ -260,15 +264,17 @@
       </section>
     </main>
 
-    <footer class="footer py-14 bg-Very-Dark-Blue">
-      <div class="cont max-w-[120rem] w-[90%] mx-auto">
-        <div class="footer-det">
-          <form action="#" class="subsc mb-20">
+    <footer class="footer py-14 bg-Very-Dark-Blue laptop:py-20">
+      <div class="cont max-w-[125rem] w-[90%] mx-auto laptop:w-[95%]">
+        <div
+          class="footer-det laptop:flex laptop:justify-between laptop:items-center"
+        >
+          <form action="#" class="subsc mb-20 order-1">
             <input
               type="email"
               required
               placeholder="Updates in your inbox..."
-              class="btn mr-2"
+              class="btn mr-2 laptop:hover:opacity-100"
             />
 
             <input
@@ -279,7 +285,7 @@
           </form>
 
           <div class="items flex justify-between px-8 mb-20">
-            <ul>
+            <ul class="laptop:mr-36">
               <li class="footer-link">
                 <a href="#">Home</a>
               </li>
@@ -306,7 +312,7 @@
               </li>
             </ul>
           </div>
-          <div class="socials mb-16">
+          <div class="socials mb-16 -order-1">
             <div
               class="icons flex gap-5 justify-between mx-auto max-w-sm mb-14"
             >
@@ -372,11 +378,10 @@
             </div>
             <img src="../images/logo2.svg" alt="logo" class="mx-auto" />
           </div>
-
-          <p class="copyright text-center text-Dark-Grayish-Blue text-2xl">
-            Copyright 2020.All Rights Reserved
-          </p>
         </div>
+        <p class="copyright text-center text-Dark-Grayish-Blue text-2xl">
+          Copyright 2020.All Rights Reserved
+        </p>
       </div>
     </footer>
     <!--  What they’ve said

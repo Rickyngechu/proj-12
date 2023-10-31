@@ -59,32 +59,6 @@
     @apply text-3xl text-Dark-Blue laptop:hover:text-Dark-Grayish-Blue;
   }
 
-  /* Styling the reciews section */
-  .reviews-cont {
-    max-width: 40rem;
-    margin-inline: auto;
-    height: 30rem;
-    position: relative;
-
-    overflow: hidden;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-  .slider {
-    background-color: hsl(0, 0%, 98%);
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    height: 90%;
-    text-align: center;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-
-    z-index: 100;
-    border-radius: 4px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: all 0.4s;
-  }
   .slider-img {
     display: block;
     margin-inline: auto;
@@ -126,23 +100,23 @@
 
   /* Styling the why us section */
   .why-sub-heading {
-    @apply flex items-center bg-Very-Pale-Red rounded-tl-full rounded-bl-full mb-8;
+    @apply flex items-center bg-Very-Pale-Red rounded-tl-full rounded-bl-full mb-8 laptop:bg-[hsl(0,0%,100%)];
   }
   /* Heading span items */
   .span-why {
-    @apply py-3 px-10 bg-Bright-Red font-bold text-3xl rounded-full text-Vary-Light-Gray mr-5;
+    @apply py-3 px-10 bg-Bright-Red font-bold text-3xl rounded-full text-Vary-Light-Gray mr-5 laptop:text-3xl;
   }
   .span-txt {
-    @apply text-Dark-Blue font-bold text-2xl;
+    @apply text-Dark-Blue font-bold text-2xl laptop:text-4xl;
   }
 
   .p-txt {
-    @apply text-2xl text-Dark-Grayish-Blue;
+    @apply text-2xl text-Dark-Grayish-Blue laptop:text-3xl;
   }
 
   /* Footer link */
   .footer-link {
-    @apply font-normal text-Vary-Light-Gray text-2xl;
+    @apply font-normal  text-Vary-Light-Gray laptop:hover:text-Bright-Red text-2xl;
   }
   .footer-link:not(:last-child) {
     margin-bottom: 1rem;
@@ -192,4 +166,55 @@
   /* .nav {
     position: fixed;
   } */
+
+  @media screen and (min-width: 900px) {
+    .reviews-cont {
+      max-width: 120rem;
+      width: 100%;
+      margin-inline: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10rem;
+      justify-content: center;
+    }
+    .slider {
+      background-color: hsl(0, 0%, 98%);
+      width: 30rem;
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    }
+    .social-icon:hover {
+      fill: hsl(12, 88%, 59%);
+    }
+  }
+  @media screen and (max-width: 899px) {
+    /* Styling the reciews section */
+    .reviews-cont {
+      max-width: 40rem;
+      margin-inline: auto;
+      height: 30rem;
+      position: relative;
+
+      overflow: hidden;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .slider {
+      background-color: hsl(0, 0%, 98%);
+      position: absolute;
+      top: 20%;
+      width: 100%;
+      height: 90%;
+      text-align: center;
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      z-index: 100;
+      border-radius: 4px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transition: all 0.4s;
+    }
+  }
 }

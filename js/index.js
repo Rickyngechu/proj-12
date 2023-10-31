@@ -30,14 +30,15 @@ const activeDot = function (slide) {
 };
 activeDot(0);
 
-slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
-
 const goToSlide = function (slide) {
   slides.forEach((s, i) => {
     s.style.transform = `translateX(${100 * (i - slide)}%)`;
   });
 };
-goToSlide(0);
+if (window.innerWidth < 899) {
+  goToSlide(0);
+}
+
 const nextSlide = function () {
   if (curSlide === maxSlide - 1) {
     curSlide = 0;
