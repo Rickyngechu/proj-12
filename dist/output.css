@@ -600,16 +600,7 @@ img {
 .header {
   background-image: url(/images/bg-tablet-pattern.svg);
   background-size: contain;
-  background-position: right -40px top -40px;
-  background-repeat: no-repeat;
-}
-
-/* Header content */
-
-.header-content {
-  background-image: url(/images/bg-tablet-pattern.svg);
-  background-size: 200px 200px;
-  background-position: right -10rem bottom 1rem;
+  background-position: right -50px top -60px;
   background-repeat: no-repeat;
 }
 
@@ -821,6 +812,7 @@ img {
 
   .social-icon:hover {
     fill: hsl(12, 88%, 59%);
+    cursor: pointer;
   }
 }
 
@@ -850,6 +842,15 @@ img {
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: all 0.4s;
+  }
+
+  /* Header content */
+
+  .header-content {
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-size: 200px 200px;
+    background-position: right -10rem bottom 1rem;
+    background-repeat: no-repeat;
   }
 }
 
@@ -912,6 +913,10 @@ img {
 
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .w-\[50\%\]{
@@ -1084,8 +1089,8 @@ img {
     width: 50%;
   }
 
-  .laptop\:w-\[70\%\]{
-    width: 70%;
+  .laptop\:w-\[80\%\]{
+    width: 80%;
   }
 
   .laptop\:w-\[90\%\]{
