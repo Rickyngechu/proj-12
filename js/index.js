@@ -5,6 +5,7 @@ const slides = document.querySelectorAll(".slider");
 const dotContainer = document.querySelector(".dots");
 let curSlide = 0;
 let maxSlide = slides.length;
+
 // sliderCont.style.overflow = "visible";
 // sliderCont.style.maxWidth = "100rem";
 // console.log(slides);
@@ -128,3 +129,5 @@ hamBtn.addEventListener("click", function () {
 
   mobileNav.classList.toggle("hide");
 });
+
+// For the navigation sticky

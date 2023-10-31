@@ -582,6 +582,19 @@ img {
   font-weight: 700;
 }
 
+@media (min-width: 900px){
+  .btn{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .btn:hover{
+    opacity: 0.6;
+  }
+}
+
 /* Header section */
 
 .header {
@@ -596,8 +609,22 @@ img {
 .header-content {
   background-image: url(/images/bg-tablet-pattern.svg);
   background-size: 200px 200px;
-  background-position: right -7rem bottom 1rem;
+  background-position: right -10rem bottom 1rem;
   background-repeat: no-repeat;
+}
+
+.desk-nav__item{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: hsl(228 39% 23% / var(--tw-text-opacity));
+}
+
+@media (min-width: 900px){
+  .desk-nav__item:hover{
+    --tw-text-opacity: 1;
+    color: hsl(227 12% 61% / var(--tw-text-opacity));
+  }
 }
 
 /* Styling the reciews section */
@@ -767,6 +794,8 @@ img {
 }
 
 .hide {
+  /* display: none; */
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -819,6 +848,10 @@ img {
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -827,16 +860,20 @@ img {
   width: 50%;
 }
 
-.w-\[80\%\]{
-  width: 80%;
-}
-
 .w-\[90\%\]{
   width: 90%;
 }
 
 .max-w-\[120rem\]{
   max-width: 120rem;
+}
+
+.max-w-\[125rem\]{
+  max-width: 125rem;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .items-center{
@@ -891,6 +928,11 @@ img {
   padding-bottom: 10rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -937,4 +979,85 @@ img {
 .text-Vary-Light-Gray{
   --tw-text-opacity: 1;
   color: hsl(0 0% 98% / var(--tw-text-opacity));
+}
+
+@media (min-width: 900px){
+  .laptop\:order-1{
+    order: 1;
+  }
+
+  .laptop\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .laptop\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .laptop\:ml-auto{
+    margin-left: auto;
+  }
+
+  .laptop\:flex{
+    display: flex;
+  }
+
+  .laptop\:hidden{
+    display: none;
+  }
+
+  .laptop\:w-1\/2{
+    width: 50%;
+  }
+
+  .laptop\:w-\[50\%\]{
+    width: 50%;
+  }
+
+  .laptop\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .laptop\:w-\[95\%\]{
+    width: 95%;
+  }
+
+  .laptop\:items-center{
+    align-items: center;
+  }
+
+  .laptop\:justify-between{
+    justify-content: space-between;
+  }
+
+  .laptop\:gap-12{
+    gap: 3rem;
+  }
+
+  .laptop\:gap-24{
+    gap: 6rem;
+  }
+
+  .laptop\:bg-none{
+    background-image: none;
+  }
+
+  .laptop\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .laptop\:text-left{
+    text-align: left;
+  }
+
+  .laptop\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .laptop\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }

@@ -36,7 +36,7 @@
 @layer components {
   /* button styling */
   .btn {
-    @apply py-3 px-9  text-2xl rounded-full font-bold;
+    @apply py-3 px-9  text-2xl rounded-full font-bold laptop:py-5 laptop:px-16 laptop:hover:opacity-60;
   }
 
   /* Header section */
@@ -51,8 +51,12 @@
     background-image: url(/images/bg-tablet-pattern.svg);
     background-size: 200px 200px;
 
-    background-position: right -7rem bottom 1rem;
+    background-position: right -10rem bottom 1rem;
     background-repeat: no-repeat;
+  }
+
+  .desk-nav__item {
+    @apply text-3xl text-Dark-Blue laptop:hover:text-Dark-Grayish-Blue;
   }
 
   /* Styling the reciews section */
@@ -180,6 +184,8 @@
     z-index: 1000;
   }
   .hide {
+    /* display: none; */
+    visibility: hidden;
     opacity: 0;
   }
 

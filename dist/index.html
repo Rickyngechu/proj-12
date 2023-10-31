@@ -21,8 +21,8 @@
   </style> -->
   </head>
   <body>
-    <div class="mobile-nav hide">
-      <nav class="nav-mb hide">
+    <div class="mobile-nav hide laptop:hidden">
+      <nav class="nav-mb hide laptop:hidden">
         <a href="#" class="nav__link">Pricing</a>
         <a href="#" class="nav__link">Product</a>
         <a href="#" class="nav__link">About US</a>
@@ -33,27 +33,55 @@
 
     <header class="header py-12">
       <nav
-        class="nav max-w-[120rem] w-[90%] mx-auto flex items-center justify-between"
+        class="nav max-w-[125rem] w-[90%] mx-auto flex items-center justify-between py-5 laptop:w-[95%]"
       >
-        <img src="../images/logo.svg" alt="Logo" />
+        <img src="../images/logo.svg" alt="Logo" class="inline-block" />
+        <ul
+          class="laptop:flex laptop:items-center laptop:w-[70%] laptop:gap-12"
+        >
+          <li class="desk-nav__item">
+            <a href="#">Pricing</a>
+          </li>
+          <li class="desk-nav__item">
+            <a href="#">Product</a>
+          </li>
+          <li class="desk-nav__item">
+            <a href="#">About us</a>
+          </li>
+          <li class="desk-nav__item">
+            <a href="#">Careers</a>
+          </li>
+          <li class="desk-nav__item">
+            <a href="#">Community</a>
+          </li>
 
+          <li class="btn bg-Bright-Red text-Vary-Light-Gray laptop:ml-auto">
+            <a href="#">Get Started</a>
+          </li>
+        </ul>
         <img
           src="../images/icon-hamburger.svg"
           alt="hamburger"
-          class="hamburger-btn"
+          class="hamburger-btn inline-block laptop:hidden"
         />
       </nav>
-      <div class="cont max-w-[120rem] w-[90%] mx-auto">
-        <div class="header-content text-center py-28">
-          <div class="img mb-5">
+      <div class="cont max-w-[125rem] w-[90%] mx-auto laptop:w-[95%]">
+        <div
+          class="header-content text-center py-28 laptop:flex laptop:justify-between laptop:gap-24 laptop:items-center laptop:px-10"
+        >
+          <div class="img mb-5 laptop:order-1 laptop:w-[50%]">
             <img src="../images/illustration-intro.svg" alt="illustration" />
           </div>
-          <div class="header-details">
-            <h1 class="main-heading font-bold text-Dark-Blue text-5xl mb-5">
+          <div class="header-details laptop:w-[50%] laptop:text-left">
+            <h1
+              class="main-heading font-bold text-Dark-Blue text-5xl mb-5 laptop:text-7xl laptop:mb-10"
+            >
               Bring everyone together to build better products.
             </h1>
 
-            <p class="header-text text-2xl mb-10 text-Dark-Grayish-Blue">
+            <p
+              class="header-text text-2xl mb-10 text-Dark-Grayish-Blue laptop:mb-16 laptop:text-3xl"
+            >
               Manage makes it simple for software teams to plan day-to-day taks
               while keeping the larger team goals in view.
             </p>
@@ -70,9 +98,11 @@
 
     <main>
       <section class="why-us bg-Vary-Light-Gray">
-        <div class="cont max-w-[120rem] w-[90%] mx-auto">
-          <div class="why-us-cont">
-            <div class="intro text-center mb-20">
+        <div class="cont max-w-[125rem] w-[90%] mx-auto laptop:w-[95%]">
+          <div
+            class="why-us-cont laptop:flex laptop:justify-between laptop:gap-24"
+          >
+            <div class="intro text-center mb-20 laptop:w-1/2 laptop:text-left">
               <h2 class="sub-heading font-bold text-Dark-Blue text-4xl mb-8">
                 What's diffrent about Manage?
               </h2>
@@ -83,9 +113,9 @@
               </p>
             </div>
 
-            <div class="why-items">
+            <div class="why-items laptop:w-1/2">
               <div class="item item-1 mb-20">
-                <h3 class="why-sub-heading">
+                <h3 class="why-sub-heading laptop:bg-transparent">
                   <span class="span-why">01</span>
                   <span class="span-txt">Track company-wide progress</span>
                 </h3>
@@ -277,7 +307,9 @@
             </ul>
           </div>
           <div class="socials mb-16">
-            <div class="icons flex gap-5 justify-between mx-auto w-[80%] mb-14">
+            <div
+              class="icons flex gap-5 justify-between mx-auto max-w-sm mb-14"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
