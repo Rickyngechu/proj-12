@@ -57,24 +57,29 @@
 
   /* Styling the reciews section */
   .reviews-cont {
-    max-width: 100rem;
-    height: 25rem;
+    max-width: 40rem;
+    margin-inline: auto;
+    height: 30rem;
     position: relative;
+
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   .slider {
     background-color: hsl(0, 0%, 98%);
-    /* background-color: orange; */
     position: absolute;
-    top: 0;
+    top: 20%;
     width: 100%;
     height: 90%;
     text-align: center;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
+
+    z-index: 100;
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    /* gap: 1rem; */
+    transition: all 0.4s;
   }
   .slider-img {
     display: block;
@@ -82,6 +87,8 @@
     height: 10rem;
     width: 10rem;
     transform: translateY(-50%);
+
+    z-index: 1000;
   }
 
   .user-name {
